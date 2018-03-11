@@ -1,11 +1,12 @@
 Package: mqim6604
 Type: Package
-Title: What the Package Does (Title Case)
+Title: R package for MQIM 6604 - Quantitative Portfolio Management at UNB
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Author: Jon Spinney
+Maintainer: Jon Spinney <jspinney@unb.ca>
+Description: Contains functions and data essential for the course.
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr

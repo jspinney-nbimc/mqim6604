@@ -1,0 +1,60 @@
+---
+title: "The mqim6604 R Package"
+author: "Jon Spinney"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Vignette Title}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+## Introduction
+
+TBC
+
+## Usage
+
+TBC
+
+## Installing and Loading the Package
+
+Install the package via the **devtools** *install_github()* function:
+
+```{r,eval=FALSE}
+# if devtools not installed
+#install.packages("devtools")
+#library(devtools)
+install_github("jspinney-nbimc/mqim6604")
+```
+
+Load the package with
+
+```{r,eval=FALSE}
+library(mqim6604)
+```
+
+## Data Included in the Package
+
+TBC
+
+## Functions
+
+TBC
+
+## Acknowledgments
+
+TBC
+
+## Legal
+
+All code of the mqim6604 package is licensed under the MIT license.
+
+All data included in the package is either sourced from publicly available locations or provided with permission by  the data owner.
