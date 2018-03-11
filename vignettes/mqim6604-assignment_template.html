@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="author" content="Jon Spinney" />
+
+<meta name="date" content="2018-03-11" />
+
+<title>Submitting Assignments in MQIM 6604</title>
+
+
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+</style>
+
+
+
+<link href="data:text/css;charset=utf-8,body%20%7B%0Abackground%2Dcolor%3A%20%23fff%3B%0Amargin%3A%201em%20auto%3B%0Amax%2Dwidth%3A%20700px%3B%0Aoverflow%3A%20visible%3B%0Apadding%2Dleft%3A%202em%3B%0Apadding%2Dright%3A%202em%3B%0Afont%2Dfamily%3A%20%22Open%20Sans%22%2C%20%22Helvetica%20Neue%22%2C%20Helvetica%2C%20Arial%2C%20sans%2Dserif%3B%0Afont%2Dsize%3A%2014px%3B%0Aline%2Dheight%3A%201%2E35%3B%0A%7D%0A%23header%20%7B%0Atext%2Dalign%3A%20center%3B%0A%7D%0A%23TOC%20%7B%0Aclear%3A%20both%3B%0Amargin%3A%200%200%2010px%2010px%3B%0Apadding%3A%204px%3B%0Awidth%3A%20400px%3B%0Aborder%3A%201px%20solid%20%23CCCCCC%3B%0Aborder%2Dradius%3A%205px%3B%0Abackground%2Dcolor%3A%20%23f6f6f6%3B%0Afont%2Dsize%3A%2013px%3B%0Aline%2Dheight%3A%201%2E3%3B%0A%7D%0A%23TOC%20%2Etoctitle%20%7B%0Afont%2Dweight%3A%20bold%3B%0Afont%2Dsize%3A%2015px%3B%0Amargin%2Dleft%3A%205px%3B%0A%7D%0A%23TOC%20ul%20%7B%0Apadding%2Dleft%3A%2040px%3B%0Amargin%2Dleft%3A%20%2D1%2E5em%3B%0Amargin%2Dtop%3A%205px%3B%0Amargin%2Dbottom%3A%205px%3B%0A%7D%0A%23TOC%20ul%20ul%20%7B%0Amargin%2Dleft%3A%20%2D2em%3B%0A%7D%0A%23TOC%20li%20%7B%0Aline%2Dheight%3A%2016px%3B%0A%7D%0Atable%20%7B%0Amargin%3A%201em%20auto%3B%0Aborder%2Dwidth%3A%201px%3B%0Aborder%2Dcolor%3A%20%23DDDDDD%3B%0Aborder%2Dstyle%3A%20outset%3B%0Aborder%2Dcollapse%3A%20collapse%3B%0A%7D%0Atable%20th%20%7B%0Aborder%2Dwidth%3A%202px%3B%0Apadding%3A%205px%3B%0Aborder%2Dstyle%3A%20inset%3B%0A%7D%0Atable%20td%20%7B%0Aborder%2Dwidth%3A%201px%3B%0Aborder%2Dstyle%3A%20inset%3B%0Aline%2Dheight%3A%2018px%3B%0Apadding%3A%205px%205px%3B%0A%7D%0Atable%2C%20table%20th%2C%20table%20td%20%7B%0Aborder%2Dleft%2Dstyle%3A%20none%3B%0Aborder%2Dright%2Dstyle%3A%20none%3B%0A%7D%0Atable%20thead%2C%20table%20tr%2Eeven%20%7B%0Abackground%2Dcolor%3A%20%23f7f7f7%3B%0A%7D%0Ap%20%7B%0Amargin%3A%200%2E5em%200%3B%0A%7D%0Ablockquote%20%7B%0Abackground%2Dcolor%3A%20%23f6f6f6%3B%0Apadding%3A%200%2E25em%200%2E75em%3B%0A%7D%0Ahr%20%7B%0Aborder%2Dstyle%3A%20solid%3B%0Aborder%3A%20none%3B%0Aborder%2Dtop%3A%201px%20solid%20%23777%3B%0Amargin%3A%2028px%200%3B%0A%7D%0Adl%20%7B%0Amargin%2Dleft%3A%200%3B%0A%7D%0Adl%20dd%20%7B%0Amargin%2Dbottom%3A%2013px%3B%0Amargin%2Dleft%3A%2013px%3B%0A%7D%0Adl%20dt%20%7B%0Afont%2Dweight%3A%20bold%3B%0A%7D%0Aul%20%7B%0Amargin%2Dtop%3A%200%3B%0A%7D%0Aul%20li%20%7B%0Alist%2Dstyle%3A%20circle%20outside%3B%0A%7D%0Aul%20ul%20%7B%0Amargin%2Dbottom%3A%200%3B%0A%7D%0Apre%2C%20code%20%7B%0Abackground%2Dcolor%3A%20%23f7f7f7%3B%0Aborder%2Dradius%3A%203px%3B%0Acolor%3A%20%23333%3B%0Awhite%2Dspace%3A%20pre%2Dwrap%3B%20%0A%7D%0Apre%20%7B%0Aborder%2Dradius%3A%203px%3B%0Amargin%3A%205px%200px%2010px%200px%3B%0Apadding%3A%2010px%3B%0A%7D%0Apre%3Anot%28%5Bclass%5D%29%20%7B%0Abackground%2Dcolor%3A%20%23f7f7f7%3B%0A%7D%0Acode%20%7B%0Afont%2Dfamily%3A%20Consolas%2C%20Monaco%2C%20%27Courier%20New%27%2C%20monospace%3B%0Afont%2Dsize%3A%2085%25%3B%0A%7D%0Ap%20%3E%20code%2C%20li%20%3E%20code%20%7B%0Apadding%3A%202px%200px%3B%0A%7D%0Adiv%2Efigure%20%7B%0Atext%2Dalign%3A%20center%3B%0A%7D%0Aimg%20%7B%0Abackground%2Dcolor%3A%20%23FFFFFF%3B%0Apadding%3A%202px%3B%0Aborder%3A%201px%20solid%20%23DDDDDD%3B%0Aborder%2Dradius%3A%203px%3B%0Aborder%3A%201px%20solid%20%23CCCCCC%3B%0Amargin%3A%200%205px%3B%0A%7D%0Ah1%20%7B%0Amargin%2Dtop%3A%200%3B%0Afont%2Dsize%3A%2035px%3B%0Aline%2Dheight%3A%2040px%3B%0A%7D%0Ah2%20%7B%0Aborder%2Dbottom%3A%204px%20solid%20%23f7f7f7%3B%0Apadding%2Dtop%3A%2010px%3B%0Apadding%2Dbottom%3A%202px%3B%0Afont%2Dsize%3A%20145%25%3B%0A%7D%0Ah3%20%7B%0Aborder%2Dbottom%3A%202px%20solid%20%23f7f7f7%3B%0Apadding%2Dtop%3A%2010px%3B%0Afont%2Dsize%3A%20120%25%3B%0A%7D%0Ah4%20%7B%0Aborder%2Dbottom%3A%201px%20solid%20%23f7f7f7%3B%0Amargin%2Dleft%3A%208px%3B%0Afont%2Dsize%3A%20105%25%3B%0A%7D%0Ah5%2C%20h6%20%7B%0Aborder%2Dbottom%3A%201px%20solid%20%23ccc%3B%0Afont%2Dsize%3A%20105%25%3B%0A%7D%0Aa%20%7B%0Acolor%3A%20%230033dd%3B%0Atext%2Ddecoration%3A%20none%3B%0A%7D%0Aa%3Ahover%20%7B%0Acolor%3A%20%236666ff%3B%20%7D%0Aa%3Avisited%20%7B%0Acolor%3A%20%23800080%3B%20%7D%0Aa%3Avisited%3Ahover%20%7B%0Acolor%3A%20%23BB00BB%3B%20%7D%0Aa%5Bhref%5E%3D%22http%3A%22%5D%20%7B%0Atext%2Ddecoration%3A%20underline%3B%20%7D%0Aa%5Bhref%5E%3D%22https%3A%22%5D%20%7B%0Atext%2Ddecoration%3A%20underline%3B%20%7D%0A%0Acode%20%3E%20span%2Ekw%20%7B%20color%3A%20%23555%3B%20font%2Dweight%3A%20bold%3B%20%7D%20%0Acode%20%3E%20span%2Edt%20%7B%20color%3A%20%23902000%3B%20%7D%20%0Acode%20%3E%20span%2Edv%20%7B%20color%3A%20%2340a070%3B%20%7D%20%0Acode%20%3E%20span%2Ebn%20%7B%20color%3A%20%23d14%3B%20%7D%20%0Acode%20%3E%20span%2Efl%20%7B%20color%3A%20%23d14%3B%20%7D%20%0Acode%20%3E%20span%2Ech%20%7B%20color%3A%20%23d14%3B%20%7D%20%0Acode%20%3E%20span%2Est%20%7B%20color%3A%20%23d14%3B%20%7D%20%0Acode%20%3E%20span%2Eco%20%7B%20color%3A%20%23888888%3B%20font%2Dstyle%3A%20italic%3B%20%7D%20%0Acode%20%3E%20span%2Eot%20%7B%20color%3A%20%23007020%3B%20%7D%20%0Acode%20%3E%20span%2Eal%20%7B%20color%3A%20%23ff0000%3B%20font%2Dweight%3A%20bold%3B%20%7D%20%0Acode%20%3E%20span%2Efu%20%7B%20color%3A%20%23900%3B%20font%2Dweight%3A%20bold%3B%20%7D%20%20code%20%3E%20span%2Eer%20%7B%20color%3A%20%23a61717%3B%20background%2Dcolor%3A%20%23e3d2d2%3B%20%7D%20%0A" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+
+
+
+
+<h1 class="title toc-ignore">Submitting Assignments in MQIM 6604</h1>
+<h4 class="author"><em>Jon Spinney</em></h4>
+<h4 class="date"><em>2018-03-11</em></h4>
+
+
+
+<div id="introduction" class="section level2">
+<h2>Introduction</h2>
+<p>Assignments in MQIM 6604 should be completed submitted in Rmarkdown. Rmarkdown is an interactive document that combines text and executable R code in a format that facilitates <em>reproducible research</em>. R code is added to the documents in <em>chunks</em>, either <em>inline</em> (within a line of text) or as a separate code block. An inline code chunk would look like</p>
+<p><code>`r 2+2`</code></p>
+<p>and when the document is compiled, the code (“2+2” in this case) would be executed, and the answer 4 would show inline in the block of text.</p>
+<p>Code that is included in a separate chunk will (when rendered into HTML) look like:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(quantmod,<span class="dt">quietly=</span><span class="ot">TRUE</span>)
+<span class="kw">getSymbols</span>(<span class="st">&quot;^GSPC&quot;</span>)
+<span class="kw">head</span>(GSPC)</code></pre></div>
+<p>This code chunk will produce:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(quantmod,<span class="dt">quietly=</span><span class="ot">TRUE</span>)
+<span class="kw">getSymbols</span>(<span class="st">&quot;^GSPC&quot;</span>)
+<span class="co">#&gt; [1] &quot;GSPC&quot;</span>
+<span class="kw">head</span>(GSPC)
+<span class="co">#&gt;            GSPC.Open GSPC.High GSPC.Low GSPC.Close GSPC.Volume</span>
+<span class="co">#&gt; 2007-01-03   1418.03   1429.42  1407.86    1416.60  3429160000</span>
+<span class="co">#&gt; 2007-01-04   1416.60   1421.84  1408.43    1418.34  3004460000</span>
+<span class="co">#&gt; 2007-01-05   1418.34   1418.34  1405.75    1409.71  2919400000</span>
+<span class="co">#&gt; 2007-01-08   1409.26   1414.98  1403.97    1412.84  2763340000</span>
+<span class="co">#&gt; 2007-01-09   1412.84   1415.61  1405.42    1412.11  3038380000</span>
+<span class="co">#&gt; 2007-01-10   1408.70   1415.99  1405.32    1414.85  2764660000</span>
+<span class="co">#&gt;            GSPC.Adjusted</span>
+<span class="co">#&gt; 2007-01-03       1416.60</span>
+<span class="co">#&gt; 2007-01-04       1418.34</span>
+<span class="co">#&gt; 2007-01-05       1409.71</span>
+<span class="co">#&gt; 2007-01-08       1412.84</span>
+<span class="co">#&gt; 2007-01-09       1412.11</span>
+<span class="co">#&gt; 2007-01-10       1414.85</span></code></pre></div>
+<p>Please read through a simple introduction to Rmarkdown such as <a href="https://rmarkdown.rstudio.com/articles_intro.html" class="uri">https://rmarkdown.rstudio.com/articles_intro.html</a>.</p>
+<p>Note that it is almost always easier to use the tag “output: html_document” while working on an assignment, as compiling directly to pdf can be a bit of a hassle when considering placement of figures of tables. My recommendation is to always use the “output: html_document” tag in Rstudio/Rmarkdown, and if you want PDF output, do this at the end with the “output: pdf_document” or by printing to PDF later. You will need installed on your system to use “output: pdf_document”.</p>
+</div>
+<div id="assignment-template" class="section level2">
+<h2>Assignment Template</h2>
+<ul>
+<li>Assignments must be completed in Rmarkdown.</li>
+<li>Should be clearly labelled as to who contributed to the assignment in the “author:” tag.</li>
+<li>R code is to be included in the document via <em>knitr chunks</em> and the live document must be able to be executed/compiled into HTML to produce the assignment output.</li>
+<li>Assignments will be graded on the solutions produced yby the Rmarkdown document as well as the clarity of formatting and the quality of the R code.</li>
+</ul>
+<p>Assignments should separate questions with “##” headings, such as:</p>
+</div>
+<div id="question-1" class="section level2">
+<h2>Question 1</h2>
+<p>Use the package <strong>quantmod</strong> to download historical daily prices on the S&amp;P 500 from Yahoo!Finance with the <em>getSymbols()</em> function. Plot the Adjusted Close.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(quantmod)
+<span class="kw">getSymbols</span>(<span class="st">&quot;^GSPC&quot;</span>)
+<span class="co">#&gt; [1] &quot;GSPC&quot;</span>
+<span class="kw">chart_Series</span>(GSPC)</code></pre></div>
+<p><img src="data:image/png;base64,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" /><!-- --></p>
+</div>
+
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

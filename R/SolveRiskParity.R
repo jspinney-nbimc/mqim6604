@@ -28,7 +28,6 @@ SolveRiskParity <- function(sigma, err_tol=0.00000001) {
   # notes: sensitive to inputs - please use sensible covariance matrix (semi-
   #   positive definite, perhaps use Bayesian Shrinkage methodology)
 
-
   # helper functions F & invert_j
   F <- function(y,V){
     n = length(y)
