@@ -8,5 +8,9 @@ Description: Contains functions and data essential for the course.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
+Depends:
+  R (>= 2.15)
+Imports:
+  tseries
 Suggests: knitr, rmarkdown
 VignetteBuilder: knitr
