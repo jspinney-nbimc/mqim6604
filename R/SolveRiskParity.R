@@ -1,32 +1,24 @@
-# risk_parity.R finds the risk parity portfolio for a given covariance matrix
-# (defined as an equal risk contribution portfolio where pctr_i = pctr_j
-# forall i, j)
-# uses algorithm of chaves et al (2012)
-# jon spinney, original:2013, this version: 2018
+#' SolveRiskParity()
+#'
+#' Finds the risk parity portfolio for a given covariance matrix (defined as
+#' an equal risk contribution portfolio where pctr_i = pctr_j for all i, j).
+#' Uses "Algorithm 1" of Chaves et al (2012) "Efficient Algorithms for
+#' Computing Risk Parity Portfolio Weights".
+#'
+#' @param sigma A variance-covariance matrix for assets in the investment universe.
+#' @param err_tol Optional parameter. Tolerance for exiting while loop (may
+#' experience convergence issues with large problems - if results do not
+#' produce expected pctr_i = pctr_j forall i, j then test smaller error
+#' err_tol (default = 0.00000001).
+#'
+#' @return A list item containing 'wts' (a vector of weights for the resulting
+#' optimal ERC portfolio), 'mctr' (the marginal contributions to risk for each
+#' asset class for the ERC portfolio), 'pctr' (the percent contributions to risk
+#' for each asset class in the ERC portfolio), 'lambda' (optimal lambda).
+#'
+#' @export
 
 SolveRiskParity <- function(sigma, err_tol=0.00000001) {
-  # solves for the risk parity portfolio weights
-  #
-  # inputs:
-  #   sigma: a variance-covariance matrix
-  #   err_tol (default = 0.00000001): tolerance for exiting while loop (may
-  #     experience convergence issues with large problems - if results do not
-  #     produce expected pctr_i = pctr_j forall i, j then test smaller error
-  #     tolerance)
-  #
-  # returns:
-  #   wts: vector of weights for optimal portfolio
-  #   mctr: marginal contributions to risk for each asset class for optimal
-  #     portfolio
-  #   pctr: percent contributions to risk for each asset class for optimal
-  #     portfolio
-  #   lambda: optimal lambda
-  #
-  # usage: PortSoln <- SolveRiskParity(covariancematrix)
-  #   access elements of PortSoln with "$" operator
-  #
-  # notes: sensitive to inputs - please use sensible covariance matrix (semi-
-  #   positive definite, perhaps use Bayesian Shrinkage methodology)
 
   # helper functions F & invert_j
   F <- function(y,V){
