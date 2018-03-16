@@ -1,23 +1,18 @@
-# Newton
-#
-# Find the root of a polynomial function
+#' Newton()
+#'
+#' Find the root of a polynomial function.
+#'
+#' @param f A function to be evaluated.
+#' @param h Optional parameter. The step size. Default 0.01.
+#' @param tol Optional parameter. The error tolerance for the function
+#' appriximation. Default 1e-12.
+#' @param x0 Optional parameter. Initial value. Default 1.
+#' @param maxiter Maximum number of iterations before exit.
+#'
+#' @return List containing iteration values, the estimated root, and the
+#' number of terations used to estimate the root.
 
 Newton <- function( f, h=0.01, tol=1e-12, x0=1, maxiter ) {
-  # Find the root of a polynomial function
-  #
-  # Args:
-  #   f: a function to be evaluated
-  #   h: the step size (default 0.01)
-  #   tol: the error tolerance for function approximation (default 1e-12)
-  #   x0: initial value
-  #   maxiter: maximum number of iterations before exit
-  #
-  # Returns:
-  #   list containing iteration values, the estimated root, and the number of
-  #   iterations used to estimate the root
-  #
-  # Requires:
-
   i = 1
   p = numeric(maxiter)
   while (i < maxiter) {
