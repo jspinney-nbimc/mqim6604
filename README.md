@@ -1,1 +1,5 @@
-# mqim6604
+# mqim6604R
+
+package for the course MQIM 6604 - Quantitative Portfolio Management in the Masters in Quantitative Investment Management program at University of New Brunswick.
+
+
